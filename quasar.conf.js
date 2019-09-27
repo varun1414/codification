@@ -49,8 +49,13 @@ module.exports = function (ctx) {
         'QCard',
         'QCardSection',
         'QCardActions',
+<<<<<<< HEAD
+        'QCircularProgress',
+        'QTree'
+=======
         'QCircularProgress'
         'QBtn'
+>>>>>>> 2c37f3f29431b6972c098ddaa57dc107bf17ef6d
       ],
       directives: [],
 
