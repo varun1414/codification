@@ -18,25 +18,26 @@ export default function (/* { ssrContext } */) {
         userArray:[
           {
             UserName:"vedita",
-            FullName:'Vedita Kamat ',
-            EmailId:'vedita@gmail.com ',
-            PNo:'9999999999',
-            pword:'vedita123'
+            pword:'vedita123',
+            points:123,
+            gold:150,
+            platinum:3
           },
     
           {
             UserName:"bhushan",
-            FullName:'Bhushan Kelkar ',
-            EmailId:'bhushan@gmail.com ',
-            PNo:'0000000000',
-            pword:'bhushan123'
+           pword:'bhushan123',
+           points:133,
+            gold:250,
+            platinum:5
           },
           {
             UserName:"purva",
-            FullName:'Purva Prabhu ',
-            EmailId:'purva@gmail.com ',
-            PNo:'8888888888',
-            pword:'purva123'
+            pword:'purva123',
+            points:153,
+            gold:350,
+            platinum:7
+
           }
         ],
         starterArray: [
