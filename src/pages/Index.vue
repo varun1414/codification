@@ -14,30 +14,38 @@
       <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
     </q-carousel>
    </div>
-  
-  <div class="q-pa-md  q-gutter-md  center">
-    <div class="row">
-    <div class="col">
-    <q-card class="my-card">
-     
-      <q-card-section>
-        <q-circular-progress
+   <div class="cent">
+     <q-circular-progress
       show-value
       font-size="12px"
       :value="value"
-      size="100px"
-      :thickness="0.22"
-      color="grey-10"
-      track-color="blue-4"
+      size="400px"
+      :thickness="0.35"
+      color="blue-6"
+      track-color="grey-10"
       class="q-ma-md"
     >
-      {{ value }}%
+    <h5>COURSE PROGRESS</h5>
+    <br><br>
+    <br><br><br>
+          {{ value }}%
     </q-circular-progress>
+<<<<<<< HEAD
+=======
+   </div>
+  <div class="q-pa-md  q-gutter-md  center">
+    <div class="row">
+    <div class="col-6">
+    <!-- <q-card class="my-card">
+     
+      <q-card-section>
+      
+>>>>>>> 2584902c3158755308ac1b6223513e29f27fb404
     
     <q-item fixed-right> PROGRESS</q-item>
     
       </q-card-section>
-    </q-card>
+    </q-card> -->
     </div>
     <div class="col">
     <q-card
@@ -123,4 +131,14 @@ export default {
 .my-card
   width: 300%
   max-width: 450px
+
+
+  
+</style>
+<style>
+.cent{
+  text-align:center;
+  margin:auto;
+}
+
 </style>
