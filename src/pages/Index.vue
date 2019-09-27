@@ -33,7 +33,9 @@
     >
       {{ value }}%
     </q-circular-progress>
+    
     <q-item fixed-right> PROGRESS</q-item>
+    
       </q-card-section>
     </q-card>
     </div>
@@ -49,12 +51,16 @@
       </q-card-section>
 
       <q-card-section>
+         <q-icon name="img:statics/plat.png " size="56px"/>
+        Platinum Coins:{{platinum}}
+       
+        <q-icon name="img:statics/gold.png " size="56px"/>
         Gold Coins:{{gold}}
         
-        <br>
-        Platinum Coins:
-        <q-icon icon="img:statics/gold.jpg"/>
-        {{platinum}}
+        
+       
+        
+        
       </q-card-section>
     </q-card>
 </div>
