@@ -71,7 +71,7 @@ export default {
           
      if(this.storeData[0]==this.name && this.storeData[1]==this.pword )
       {
-          this.$router.push('/orderpage')
+          this.$router.push('/')
       }
          else
              {
