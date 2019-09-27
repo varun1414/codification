@@ -41,7 +41,16 @@ module.exports = function (ctx) {
       //            (not treeshaking Quasar; biggest bundle size; convenient)
       all: 'auto',
 
-      components: [],
+      components: [
+        'QIcon',
+        'QCarousel',
+        'QCarouselControl',
+        'QCarouselSlide',
+        'QCard',
+        'QCardSection',
+        'QCardActions',
+        'QCircularProgress'
+      ],
       directives: [],
 
       // Quasar plugins
@@ -155,7 +164,7 @@ module.exports = function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        // appId: 'codification'
+        // appId: 'temp'
       }
     }
   }
