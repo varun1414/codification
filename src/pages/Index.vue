@@ -14,34 +14,79 @@
       <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
     </q-carousel>
    </div>
-   <div class="cent">
+   <div class="cent" >
+    <div class="col-8">
      <q-circular-progress
       show-value
-      font-size="12px"
+      font-size="40px"
+      
       :value="value"
       size="400px"
-      :thickness="0.35"
+      :thickness="0.25"
       color="blue-6"
       track-color="grey-10"
       class="q-ma-md"
     >
+<<<<<<< HEAD
+
+<div class="column" style="height: 150px; text-align:center; display:block; width:100%;">
+      <div class="col">
+         <h5>COURSE PROGRESS</h5>
+      </div>
+      <div class="col">
+           {{ value }}% 
+      </div>
+    </div>
+
+=======
     <h5>COURSE PROGRESS</h5>
     <br><br>
       {{ value }}%
+>>>>>>> ce991dc58ed564a5d3f6a539c77b3063321d6f57
     </q-circular-progress>
-   </div>
+  </div>
+  </div>
+
+  
+   
   <div class="q-pa-md  q-gutter-md  center">
     <div class="row">
     <div class="col-6">
-    <!-- <q-card class="my-card">
-     
+
+    <q-card dark bordered class="bg-grey-9 my-card" style="position:relative; ">
+
+      <q-btn color="black" style="position:absolute; right:16px; bottom:16px;" label="Improve Your Rank" />
       <q-card-section>
+        <div class="col">
+      <div class="row">
+        <div class="text-h6" style="text-align:right; font-family: 'Mansalva', cursive; padding:10px 0 0 0">#RANK</div>
+        <div style="font-size:20px;  padding:0 0 0 20px">
+        <q-icon name="img:statics/medal.png "  size="56px"/>{{rank}}
+      </div>
+      </div>  
+    </div>
+    </q-card-section>
+
+      <q-separator dark inset />
+
+      <q-card-section>
+
+        
+    <!-- <div class="col">
+
+      <div class="row">
+        <div class="text-h6" style="position:relative; height:20px; font-family: 'Mansalva', cursive; font-size:20px;">
+        
+        
+      </div>
+      </div>  
+    </div>
+         -->
+        
       
-    
-    <q-item fixed-right> PROGRESS</q-item>
-    
+        
       </q-card-section>
-    </q-card> -->
+    </q-card>
     </div>
     <div class="col">
     <q-card
@@ -54,21 +99,29 @@
         
       </q-card-section>
 
-      <q-card-section>
-         <q-icon name="img:statics/plat.png " size="56px"/>
+      <q-card-section >
+        <div class="row">
+      <div class="col">
+        <q-icon name="img:statics/plat.png " size="56px"/>
         Platinum Coins:{{platinum}}
-       
+      </div>
+      <div class="col">
+         <div style="text-align:left">
         <q-icon name="img:statics/gold.png " size="56px"/>
         Gold Coins:{{gold}}
-        
-        
-       
-        
-        
+        </div>
+      </div>
+      </div>
+      <div class="row">
+         <div class="cent" style="text-align:center; padding:30px 0 0 0;">
+         <q-btn color="accent" label="Redeem" />
+        </div>
+      </div>
       </q-card-section>
     </q-card>
-</div>
     </div>
+<<<<<<< HEAD
+=======
 <div class="row">
   <div class="col">
     <q-card dark bordered class="bg-grey-9 my-card height-10px">
@@ -82,16 +135,19 @@
         
       </q-card-section>
     </q-card>
+>>>>>>> ce991dc58ed564a5d3f6a539c77b3063321d6f57
     </div>
-<div class="col">
-    <q-card flat bordered class="my-card">
+    </div>
+
+<div style="margin:auto; width:50%; padding:0 100px 0 100px; text-align:center;">
+    <q-card flat bordered  class="textstyle" >
+
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
+        <div style="font-size:20px">Your Status</div>
       </q-card-section>
 
       <q-card-section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        <q-icon name="img:statics/icon.png " size="40px"/>
       </q-card-section>
 
       <q-separator inset />
@@ -102,10 +158,9 @@
       </q-card-section>
     </q-card>
 </div>
-</div>
-  </div>
-</div>
+    <div style="height:100px"></div>
 
+  </div>
 </template>
 
 <script>
@@ -116,25 +171,31 @@ export default {
       slide:1,
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       value:20,
-      rank:1,
+      rank:7,
       gold:2,
       platinum:7
     }
   }
 }
 </script>
-<style lang="sass" scoped>
-.my-card
-  width: 300%
-  max-width: 450px
 
-
-  
-</style>
 <style>
 .cent{
   text-align:center;
+  display: block;
   margin:auto;
 }
 
+.my-card{
+  height:200px;
+  max-width: 500px;
+  display: block;
+  margin:auto;
+}
+
+.textstyle{
+  font-family: 'Josefin Sans', sans-serif; 
+  font-weight: bold;
+}
+  
 </style>
