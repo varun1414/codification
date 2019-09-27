@@ -15,7 +15,7 @@
 <div class="q-pa-md row items-start q-gutter-md" style="text-align:center">
 
     <q-card class="my-card" style="position:absolute; display:block; margin:auto;top:200px; left:200px;">
-      <q-card-section style="padding:0 0 0 0;font-weight:bold;font-size:18px;">
+      <q-card-section style="padding:0 2px 0 2px;font-weight:bold;font-size:18px;">
        <p style="padding:0 0 0 0">
        <p style="font-size:20px; color:blue;">Importance of Problem Solving.</p>
        Without Problem Solving, coding will just be typing commands in a given language.<br>
@@ -25,7 +25,7 @@
     </q-card>
 
     <q-card class="my-card" style="position:absolute; display:block; margin:auto;top:200px; left:700px;">
-     <q-card-section style="padding:0 0 0 0;font-weight:bold;font-size:17px">
+     <q-card-section style="padding:0 3px 0 3px;font-weight:bold;font-size:18px">
        <p style="padding:0 0 0 0">
        <p style="font-size:20px; color:blue;">Don't be Syntax Dependant.</p>
        Syntax is merely the grammar of any language that you use.<br>
