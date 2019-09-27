@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div style="width:20%;height:10%;margin-right:10%;" >
+    <div style="width:20%;height:10%;padding:30px 0 0 40px;top:10%;" >
  <q-card
       class="my-card text-white"
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
@@ -11,9 +11,9 @@
         
       </q-card-section>
 
-      <q-card-section>
+      <!-- <q-card-section>
         Hello {{ lorem }}
-      </q-card-section>
+      </q-card-section> -->
     </q-card>
     </div>
     
@@ -52,6 +52,18 @@ Let’s understand these two types with the help of examples.
 
 Decision making condition statement
 Conditions like ‘if’, “if-else”, “if-else-if”, “nested if”, ternary conditions etc fall under this category.</p>
+        <q-card dark bordered class="bg-grey-9 my-card">
+      <q-card-section>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">by John Doe</div>
+      </q-card-section>
+
+      <q-separator dark inset />
+
+      <q-card-section>
+        {{ lorem }}
+      </q-card-section>
+    </q-card>
           </q-tab-panel>
 
           <q-tab-panel name="LOOPS">
@@ -80,12 +92,6 @@ A function declaration tells the compiler about a function's name, return type, 
 The C standard library provides numerous built-in functions that your program can call. <br>For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.
 
 A function can also be referred as a method or a sub-routine or a procedure, etc.</p>
-          </q-tab-panel>
-
-          <q-tab-panel name="Room view">
-            <div class="text-h4 q-mb-md">Room view</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
           </q-tab-panel>
         </q-tab-panels>
       </template>

@@ -152,7 +152,7 @@ export default {
       value:20,
       rank:7,
       gold:2,
-      platinum:7
+      platinum:7,
       counter: 20
     }
   }
