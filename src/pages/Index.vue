@@ -149,14 +149,21 @@ export default {
     return{
       slide:1,
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      value:20,
-      rank:7,
-      gold:2,
-      platinum:7,
+      value:0,
+      rank:0,
+      gold:0,
+      platinum:0,
 
       counter: 22
 
 
+    }
+  },
+  methods:{
+    mounted(){
+      this.gold=this.$state.userArray['gold'];
+      this.platinum=this.$state.userArray['platinum'];
+      this.points=this.$state.userArray['points'];
     }
   }
 }

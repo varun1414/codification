@@ -4,7 +4,7 @@ const routes = [
      path: '/index', 
     component: () => import('layouts/Dash.vue'),
     children: [
-      { path: '/index', component: () => import('pages/Index.vue')},
+      {  path: '\index:user_obj',name:'dash',props:true ,component: () => import('pages/index.vue')},
         /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
     ]
   },
