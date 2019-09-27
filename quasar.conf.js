@@ -50,6 +50,7 @@ module.exports = function (ctx) {
         'QCardSection',
         'QCardActions',
         'QCircularProgress'
+        'QBtn'
       ],
       directives: [],
 
