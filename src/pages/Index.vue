@@ -30,22 +30,22 @@
     <br><br><br>
           {{ value }}%
     </q-circular-progress>
-<<<<<<< HEAD
-=======
+
    </div>
   <div class="q-pa-md  q-gutter-md  center">
     <div class="row">
     <div class="col-6">
-    <!-- <q-card class="my-card">
-     
+    <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
-      
->>>>>>> 2584902c3158755308ac1b6223513e29f27fb404
-    
-    <q-item fixed-right> PROGRESS</q-item>
-    
+        <div class="text-h6" style="font-family: 'Mansalva', cursive;">#RANK</div>
+        <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
       </q-card-section>
-    </q-card> -->
+      <q-separator dark inset />
+
+      <q-card-section>
+        
+      </q-card-section>
+    </q-card>
     </div>
     <div class="col">
     <q-card
@@ -75,7 +75,7 @@
     </div>
 <div class="row">
   <div class="col">
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <!-- <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
         <div class="text-h6">#RANK</div>
         <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
@@ -85,7 +85,7 @@
       <q-card-section>
         
       </q-card-section>
-    </q-card>
+    </q-card> -->
     </div>
 <div class="col">
     <q-card flat bordered class="my-card">
