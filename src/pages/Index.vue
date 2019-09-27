@@ -153,11 +153,7 @@ export default {
       rank:7,
       gold:2,
       platinum:7,
-<<<<<<< HEAD
-      counter: 22
-=======
       counter: 20
->>>>>>> bfad69c4f31e1c09fa47fa56e85d3ecadff8619c
     }
   }
 }

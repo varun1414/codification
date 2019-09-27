@@ -3,7 +3,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
     <q-page class="flex flex-center">
-    <img class="img" src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=871&q=80" width="1500" height="656">
+    <img class="img" src="https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="1500" height="656">
   </q-page>
 <div class="fixed-center" style="max-width: 400px; margin-right: 400pax" >
     <div color="#0000FF">
@@ -71,7 +71,7 @@ export default {
           
      if(this.storeData[0]==this.name && this.storeData[1]==this.pword )
       {
-          this.$router.push('/orderpage')
+          this.$router.push('/')
       }
          else
              {
