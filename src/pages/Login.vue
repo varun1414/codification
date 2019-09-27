@@ -45,7 +45,7 @@
 
 <script>
 
-//import {mapGetters}from 'vuex'
+import {mapGetters}from 'vuex'
 export default {
   data()
     {
@@ -71,7 +71,7 @@ export default {
           
      if(this.storeData[0]==this.name && this.storeData[1]==this.pword )
       {
-          this.$router.push('/')
+          this.$router.push('/index')
       }
          else
              {

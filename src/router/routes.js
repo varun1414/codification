@@ -4,7 +4,7 @@ const routes = [
      path: '/index', 
     component: () => import('layouts/Dash.vue'),
     children: [
-      { path: '', component: () => import('pages/index.vue')},
+      { path: '/index', component: () => import('pages/Index.vue')},
         /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
     ]
   },
@@ -15,7 +15,8 @@ const routes = [
     component: () => import('layouts/MyLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Home.vue')},
-      {path: '/login', component: () => import('pages/Login.vue')}  
+      {path: '/login', component: () => import('pages/Login.vue')},
+ 
     ]
   },
   {
