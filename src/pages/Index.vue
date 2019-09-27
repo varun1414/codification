@@ -27,7 +27,6 @@
       track-color="grey-10"
       class="q-ma-md"
     >
-<<<<<<< HEAD
 
 <div class="column" style="height: 150px; text-align:center; display:block; width:100%;">
       <div class="col">
@@ -38,11 +37,6 @@
       </div>
     </div>
 
-=======
-    <h5>COURSE PROGRESS</h5>
-    <br><br>
-      {{ value }}%
->>>>>>> ce991dc58ed564a5d3f6a539c77b3063321d6f57
     </q-circular-progress>
   </div>
   </div>
@@ -120,22 +114,6 @@
       </q-card-section>
     </q-card>
     </div>
-<<<<<<< HEAD
-=======
-<div class="row">
-  <div class="col">
-    <q-card dark bordered class="bg-grey-9 my-card height-10px">
-      <q-card-section>
-        <div class="text-h6">#RANK</div>
-        <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
-      </q-card-section>
-      <q-separator dark inset />
-
-      <q-card-section>
-        
-      </q-card-section>
-    </q-card>
->>>>>>> ce991dc58ed564a5d3f6a539c77b3063321d6f57
     </div>
     </div>
 
@@ -148,6 +126,7 @@
 
       <q-card-section>
         <q-icon name="img:statics/icon.png " size="40px"/>
+        <div>Streak Count:</div>
       </q-card-section>
 
       <q-separator inset />
@@ -174,6 +153,7 @@ export default {
       rank:7,
       gold:2,
       platinum:7
+      counter: 20
     }
   }
 }
