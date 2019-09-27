@@ -23,7 +23,7 @@
      
    
 <div class="fixed-center" style=" display:block; margin:auto; padding:500px 0 0 0;" >
-   <q-btn label="Get Started"  color="amber"/>
+   <q-btn label="Get Started"  color="amber" @click="login()"/>
     </div>
  </div>
 
@@ -41,10 +41,8 @@
      {
        login(){
          this.$router.push('/login')
-       },
-       about(){
-         this.$router.push('/about')
        }
+      
        
      }
    }
