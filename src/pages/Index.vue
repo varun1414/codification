@@ -33,7 +33,9 @@
     >
       {{ value }}%
     </q-circular-progress>
+    
     <q-item fixed-right> PROGRESS</q-item>
+    
       </q-card-section>
     </q-card>
     </div>
@@ -49,12 +51,16 @@
       </q-card-section>
 
       <q-card-section>
+         <q-icon name="img:statics/plat.png " size="56px"/>
+        Platinum Coins:{{platinum}}
+       
+        <q-icon name="img:statics/gold.png " size="56px"/>
         Gold Coins:{{gold}}
         
-        <br>
-        Platinum Coins:
-        <q-icon icon="img:statics/gold.jpg"/>
-        {{platinum}}
+        
+       
+        
+        
       </q-card-section>
     </q-card>
 </div>
@@ -63,14 +69,13 @@
   <div class="col">
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-h6">#RANK</div>
+        <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
       </q-card-section>
-
       <q-separator dark inset />
 
       <q-card-section>
-        {{ lorem }}
+        
       </q-card-section>
     </q-card>
     </div>
