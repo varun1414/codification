@@ -38,7 +38,7 @@
         :breakpoint="400"
         content-class="bg-grey-10"
       >
-        <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; ">
+        <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;" class="fit">
           <q-list padding>
             <q-item clickable v-ripple>
               <q-item-section avatar >
