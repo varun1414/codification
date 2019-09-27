@@ -27,8 +27,7 @@
     >
     <h5>COURSE PROGRESS</h5>
     <br><br>
-    <br><br><br>
-          {{ value }}%
+      {{ value }}%
     </q-circular-progress>
    </div>
   <div class="q-pa-md  q-gutter-md  center">
@@ -72,7 +71,7 @@
     </div>
 <div class="row">
   <div class="col">
-    <q-card dark bordered class="bg-grey-9 my-card">
+    <q-card dark bordered class="bg-grey-9 my-card height-10px">
       <q-card-section>
         <div class="text-h6">#RANK</div>
         <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
