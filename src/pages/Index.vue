@@ -14,30 +14,32 @@
       <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
     </q-carousel>
    </div>
-  
-  <div class="q-pa-md  q-gutter-md  center">
-    <div class="row">
-    <div class="col">
-    <q-card class="my-card">
-     
-      <q-card-section>
-        <q-circular-progress
+   <div class="cent">
+     <q-circular-progress
       show-value
       font-size="12px"
       :value="value"
-      size="100px"
-      :thickness="0.22"
-      color="grey-10"
-      track-color="blue-4"
+      size="200px"
+      :thickness="0.45"
+      color="blue-2"
+      track-color="grey-10"
       class="q-ma-md"
     >
       {{ value }}%
     </q-circular-progress>
+   </div>
+  <div class="q-pa-md  q-gutter-md  center">
+    <div class="row">
+    <div class="col-6">
+    <!-- <q-card class="my-card">
+     
+      <q-card-section>
+      
     
     <q-item fixed-right> PROGRESS</q-item>
     
       </q-card-section>
-    </q-card>
+    </q-card> -->
     </div>
     <div class="col">
     <q-card
@@ -69,14 +71,13 @@
   <div class="col">
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-h6">#RANK</div>
+        <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
       </q-card-section>
-
       <q-separator dark inset />
 
       <q-card-section>
-        {{ lorem }}
+        
       </q-card-section>
     </q-card>
     </div>
@@ -124,4 +125,14 @@ export default {
 .my-card
   width: 300%
   max-width: 450px
+
+
+  
+</style>
+<style>
+.cent{
+  text-align:center;
+  margin:auto;
+}
+
 </style>
