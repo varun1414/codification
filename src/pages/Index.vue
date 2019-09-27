@@ -44,12 +44,17 @@
     >
     
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-h6">Rewards</div>
+        
       </q-card-section>
 
       <q-card-section>
-        {{ lorem }}
+        Gold Coins:{{gold}}
+        
+        <br>
+        Platinum Coins:
+        <q-icon icon="img:statics/gold.jpg"/>
+        {{platinum}}
       </q-card-section>
     </q-card>
 </div>
@@ -101,7 +106,10 @@ export default {
     return{
       slide:1,
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      value:20
+      value:20,
+      rank:1,
+      gold:2,
+      platinum:7
     }
   }
 }
