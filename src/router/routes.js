@@ -1,13 +1,25 @@
 
 const routes = [
-  {
-    path: '/',
+    {
+    path: '/index',
     component: () => import('layouts/Dash.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/index.vue')},
+        /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
+    ]
+  },
+   
+   
+  {
+    path: '/',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Home.vue')},
+      {path: '/login', component: () => import('pages/Login.vue')}  
     ]
   }
 ]
+
 
 // Always leave this as last one
 if (process.env.MODE !== 'ssr') {
