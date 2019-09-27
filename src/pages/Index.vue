@@ -118,22 +118,22 @@
     </div>
 
 <div style="margin:auto; width:50%; padding:0 100px 0 100px; text-align:center;">
-    <q-card flat bordered  class="textstyle" >
+    <q-card style="background-color:#c0bfc9 " >
 
       <q-card-section>
-        <div style="font-size:20px">Your Status</div>
+        <div style="font-size:20px; font-family: 'Lobster', cursive;">Your Status</div>
       </q-card-section>
 
-      <q-card-section>
+      <q-card-section class="textstyle">
         <q-icon name="img:statics/icon.png " size="40px"/>
-        <div>Streak Count:</div>
+        <div style="font-size:20px">Streak Count:{{counter}} Days</div>
       </q-card-section>
 
       <q-separator inset />
 
       <q-card-section>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        <div style="font-size:15px">I have not failed. I've just found 10,000 ways that won't work.</div>
+        <div style="font-style:italic; text-align:right"> ~Thomas A. Edison</div>
       </q-card-section>
     </q-card>
 </div>
@@ -152,8 +152,8 @@ export default {
       value:20,
       rank:7,
       gold:2,
-      platinum:7
-      counter: 20
+      platinum:7,
+      counter: 22
     }
   }
 }
