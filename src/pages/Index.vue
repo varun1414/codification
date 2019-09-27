@@ -19,13 +19,16 @@
       show-value
       font-size="12px"
       :value="value"
-      size="200px"
-      :thickness="0.45"
-      color="blue-2"
+      size="400px"
+      :thickness="0.35"
+      color="blue-6"
       track-color="grey-10"
       class="q-ma-md"
     >
-      {{ value }}%
+    <h5>COURSE PROGRESS</h5>
+    <br><br>
+    <br><br><br>
+          {{ value }}%
     </q-circular-progress>
    </div>
   <div class="q-pa-md  q-gutter-md  center">
