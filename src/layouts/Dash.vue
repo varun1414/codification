@@ -31,12 +31,14 @@
       </q-tabs>
 
     </q-header> 
+        <div class="fixed-left">
         <q-drawer
         v-model="drawer"
         show-if-above
         :width="200"
         :breakpoint="400"
         content-class="bg-grey-10"
+        
       >
         <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px;" class="fit">
           <q-list padding>
@@ -92,6 +94,7 @@
           </div>
         </q-img>
       </q-drawer>
+        </div>
 
      
   
