@@ -1,55 +1,44 @@
-<template>
+<!--<template>
      <div>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
-       <ul>
-  <li><a class="active" @click="login()">Login!</a></li>
-  
-  </ul>
-   <q-carousel
-      style="padding-top:0.2px"
-      animated
-      v-model="slide"
-      arrows
-      navigation
-      infinite
-    >
-      <q-carousel-slide :name="1" img-src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/>
-      <q-carousel-slide :name="2" img-src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"/>
-      <q-carousel-slide :name="3" img-src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=871&q=80" />
-      <q-carousel-slide :name="4" img-src="https://images.unsplash.com/flagged/photo-1556655678-9d4812e3fbe9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" />
-    </q-carousel>
+      <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+       <img src="https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="1500" height="656">
+<div style="position:fixed;height:60px;width:100%;top:0px;left:0;background-color: black; z-index:1">
+     <h4 style="display: inline-block; margin-top:15px; margin-left:20px; color:white;font-family: 'Clicker Script'; font-size=30px">Codification</h4>
+        </div>
+        <div>
+         <q-btn color="amber" glossy label="Amber" />
+          </div> 
+     
+          
+    </div>
     
-    <div style="background-color:	#DCDCDC; padding-top: 23px; padding-bottom:1px">
-       <q-card class="my-card">
-      <img src="https://code-it-studio.de/wp-content/uploads/2018/05/logo_blau_mit_rand_font3_svg.png" style="width:100%;">
+  </template>-->
+ <template>
+<div>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
+   <div style="position:fixed;height:60px;width:100%;top:0px;left:0;background-color: black; z-index:1">
+     <h4 style="display: inline-block; margin-top:15px; margin-left:550px; color:white;font-family: 'Clicker Script'; font-size=30px">Codification</h4>
+      </div> 
+    <q-page class="flex flex-center">
+    <img src="https://images.unsplash.com/photo-1533709752211-118fcaf03312?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" width="1500" height="656">
+  
+  </q-page>
+   
+<div class="fixed-center" style=" display:block; margin:auto; padding:500px 0 0 0;" >
+    <!-- <div style="bottom:10px"> -->
+        <q-btn label="Get Started"  color="amber"/>
+    
+   
+     
+   </div>
+ </div>
 
-      <q-card-section>
-        <div class="text-h6">Practice and learn the fun way</div>
-        <div class="text-subtitle2">Order Now!!</div>
-      </q-card-section>
-      
-      </q-card>
-      
-      <p  class="move" ><strong>Codification</strong></p>
-      <p class="move1"><strong>Learn to Code the fun Way!</strong></p>
-      <div class="mov">
-          <q-card class="my-card">
-      <img src="https://res.cloudinary.com/gopaisacom/image/upload/promotions/eat.png" style="width:100%;">
+   </template>
 
-      <q-card-section>
-        <div class="text-h6"> Interesting Offers for you!</div>
-        <div class="text-subtitle2">Avail it!</div>
-      </q-card-section>
-       <q-card-section>
-       
-      </q-card-section>
-      </q-card>
-      </div>
-       <div style="background-color:	black; padding-top: 40px; padding-bottom:10px"></div>
-    </div>
-    </div>
-  </template>
+
   <script>
    export default {
      data(){
@@ -70,6 +59,16 @@
    }
    </script>
      <style>
+     
+     body{
+       overflow: hidden;
+
+     }
+     .button{
+       display: block;
+       margin: auto;
+       position:center;
+     }
      .mov{
         position:absolute;
         top: 485px;
@@ -83,7 +82,7 @@
         top: 490px;
         bottom: 40px;
          left: 520px;
-       
+       color: black;
      }
      .move1{
         font-family: 'Clicker Script';
@@ -107,7 +106,7 @@ li {
 
 li a {
   font-family: 'Clicker Script';
-  font-size: 30px;
+  font-size: 22px;
   display: block;
   color: white;
   text-align: center;

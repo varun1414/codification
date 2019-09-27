@@ -49,7 +49,9 @@ module.exports = function (ctx) {
         'QCard',
         'QCardSection',
         'QCardActions',
-        'QCircularProgress'
+        'QCircularProgress',
+        'QBtn',
+        'QParallax'
       ],
       directives: [],
 
