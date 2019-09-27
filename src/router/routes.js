@@ -1,7 +1,7 @@
 
 const routes = [
     {
-    path: '/index',
+     path: '/index', 
     component: () => import('layouts/Dash.vue'),
     children: [
       { path: '', component: () => import('pages/index.vue')},
@@ -16,6 +16,14 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Home.vue')},
       {path: '/login', component: () => import('pages/Login.vue')}  
+    ]
+  },
+  {
+    path: '/',
+    component: () => import('layouts/resourceLay.vue'),
+    children: [
+      { path: '/resources', component: () => import('components/resources.vue')},
+      
     ]
   }
 ]
