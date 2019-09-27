@@ -25,9 +25,9 @@
        </div>
        </div>
       <q-tabs align="left">
-        <q-route-tab to="/page1" label="My Progress" />
-        <q-route-tab to="/page2" label="Leaderboard" />
-        <q-route-tab to="/page3" label="About" />
+        <q-route-tab to="resources" label="My Progress" />
+        <q-route-tab to="/page2" label="Leaderboard" @click="route2" />
+        <q-route-tab to="/page3" label="About" @click="route3"/>
       </q-tabs>
 
     </q-header> 
@@ -150,6 +150,11 @@ export default {
     return {
       drawer: false,
       miniState: true
+    }
+  },
+  methods:{
+    route1(){
+      this.$router.push("resources")
     }
   }
 }
