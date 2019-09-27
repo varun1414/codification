@@ -30,8 +30,6 @@
     <br><br><br>
           {{ value }}%
     </q-circular-progress>
-<<<<<<< HEAD
-=======
    </div>
   <div class="q-pa-md  q-gutter-md  center">
     <div class="row">
@@ -40,7 +38,6 @@
      
       <q-card-section>
       
->>>>>>> 2584902c3158755308ac1b6223513e29f27fb404
     
     <q-item fixed-right> PROGRESS</q-item>
     
