@@ -33,7 +33,9 @@
     >
       {{ value }}%
     </q-circular-progress>
+    
     <q-item fixed-right> PROGRESS</q-item>
+    
       </q-card-section>
     </q-card>
     </div>
@@ -44,12 +46,21 @@
     >
     
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-h6">Rewards</div>
+        
       </q-card-section>
 
       <q-card-section>
-        {{ lorem }}
+         <q-icon name="img:statics/plat.png " size="56px"/>
+        Platinum Coins:{{platinum}}
+       
+        <q-icon name="img:statics/gold.png " size="56px"/>
+        Gold Coins:{{gold}}
+        
+        
+       
+        
+        
       </q-card-section>
     </q-card>
 </div>
@@ -58,14 +69,13 @@
   <div class="col">
     <q-card dark bordered class="bg-grey-9 my-card">
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-h6">#RANK</div>
+        <q-icon name="img:statics/crown.png " size="56px"/>{{rank}}
       </q-card-section>
-
       <q-separator dark inset />
 
       <q-card-section>
-        {{ lorem }}
+        
       </q-card-section>
     </q-card>
     </div>
@@ -101,7 +111,10 @@ export default {
     return{
       slide:1,
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      value:20
+      value:20,
+      rank:1,
+      gold:2,
+      platinum:7
     }
   }
 }
