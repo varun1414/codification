@@ -5,6 +5,8 @@ const routes = [
     component: () => import('layouts/Dash.vue'),
     children: [
       { path: '/index', component: () => import('pages/Index.vue')},
+      { path: '/leaderboard', component: () => import('components/leaderboard.vue')}
+
         /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
     ]
   },
