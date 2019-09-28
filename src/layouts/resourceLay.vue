@@ -8,11 +8,8 @@
        <q-toolbar>
           <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
 
-        <q-toolbar-title b>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
-          </q-avatar>
-          Title
+        <q-toolbar-title >
+                    Codification
            </q-toolbar-title>
       </q-toolbar>
       </div>

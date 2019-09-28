@@ -8,17 +8,22 @@
       navigation
       infinite
     >
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" style="height:250px"/>
+      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
       <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+      
     </q-carousel>
    </div>
 
-   <div style="width:30%;height:10%;padding:0 0 0 40px;" >
+   
+   
+   
+   <div class="row">
+      <div class="col">
+        <div style="width:70%; margin:auto; padding:50px 0 0 0;" >
+
  <q-card
       class="my-card text-white"
-      style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
+      style="height:100px; background: radial-gradient(circle, #35a2ff 0%, #014a88 100%);"
 
     >
       <q-card-section>
@@ -31,15 +36,19 @@
       </q-card-section> -->
     </q-card>
     </div>
-    
-   <div class="cent" >
+
+      </div>
+
+      <div class="col">
+        <div class="cent" >
+
     <div class="col-8">
      <q-circular-progress
       show-value
       font-size="40px"
       
       :value="value"
-      size="400px"
+      size="300px"
       :thickness="0.25"
       color="blue-6"
       track-color="grey-10"
@@ -58,6 +67,18 @@
     </q-circular-progress>
   </div>
   </div>
+      </div>
+
+      <div class="col">
+        
+      </div>
+    </div>
+
+   
+   
+   
+   
+   
 
   
    

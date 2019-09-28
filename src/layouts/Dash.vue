@@ -8,11 +8,8 @@
        <q-toolbar>
           <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
 
-        <q-toolbar-title b>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
-          </q-avatar>
-          Title
+        <q-toolbar-title >
+           Codification
            </q-toolbar-title>
       </q-toolbar>
       </div>
@@ -25,10 +22,14 @@
        </div>
        </div>
       <q-tabs align="left">
-        <q-route-tab to="components/index/" label="My Progress" />
-        <q-route-tab to="/page2" label="Leaderboard"  />
-        <q-route-tab to="/resources" label="My Courses" @click="route3"/>
+
+        <q-route-tab to="index:uid" label="My Progress" />
+        <q-route-tab to="/leaderboard" label="Leaderboard"  />
+        <q-route-tab to="/resources" label="My Courses"/>
+
+    
       </q-tabs>
+
 
     </q-header> 
         <div class="fixed-left">

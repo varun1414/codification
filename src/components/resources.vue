@@ -7,7 +7,8 @@
 
     >
       <q-card-section>
-        <div class="text-h6">WELCOME BACK, <br>Razvan</div>
+
+        <div class="text-h6">WELCOME BACK <br>{{storeData[0]}}</div>
         
       </q-card-section>
 
@@ -157,8 +158,10 @@ A function can also be referred as a method or a sub-routine or a procedure, etc
 export default {
   data () {
     return {
-         
-      splitterModel: 50,
+       name:'',
+       pword:'',
+       storeData: [],
+        splitterModel: 50,
       selected: 'topics',
       slide: 'style',
       lorem: 'varun',
@@ -184,6 +187,7 @@ export default {
     }
   },
   methods:{
+
   challenge1() {
     this.$router.push('/challenge1')
   },
@@ -193,6 +197,16 @@ export default {
 challenge3() {
     this.$router.push('/challenge3')
   }
+     submitLogin () {
+     for(var i=0;i<this.$store.getters.getUser.length;i++)
+        {
+            if(this.$store.getters.getUser[i].UserName==this.name)
+             {
+              this.storeData[0]=this.$store.getters.getUser[i].UserName 
+              }
+        } 
+
   }
+}
 }
 </script>
