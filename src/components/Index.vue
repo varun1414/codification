@@ -14,14 +14,15 @@
       <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
     </q-carousel>
    </div>
-   <div style="width:20%;height:10%;padding:0 0 0 40px;" >
+
+   <div style="width:30%;height:10%;padding:0 0 0 40px;" >
  <q-card
       class="my-card text-white"
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
 
     >
       <q-card-section>
-        <div class="text-h6">WELCOME BACK <br>{{this.name}}</div>
+        <div class="text-h6">WELCOME BACK, <br>{{this.name}}</div>
       
       </q-card-section>
 
@@ -30,6 +31,7 @@
       </q-card-section> -->
     </q-card>
     </div>
+    
    <div class="cent" >
     <div class="col-8">
      <q-circular-progress
