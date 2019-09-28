@@ -8,7 +8,13 @@
        <q-toolbar>
           <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
 
-       </q-toolbar>
+        <q-toolbar-title b>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+          </q-avatar>
+          Title
+           </q-toolbar-title>
+      </q-toolbar>
       </div>
       <div class="col">
         
@@ -20,7 +26,7 @@
        </div>
       <q-tabs align="left">
         <q-route-tab to="resources" label="My Progress" />
-        <q-route-tab to="/page2" label="Leaderboard" @click="leaderboard()" />
+        <q-route-tab to="/leaderboard" label="Leaderboard" @click="route2" />
         <q-route-tab to="/page3" label="About" @click="route3"/>
       </q-tabs>
 
@@ -152,9 +158,6 @@ export default {
   methods:{
     route1(){
       this.$router.push("resources")
-    },
-    leaderboard(){
-      this.$router.push("/leaderboard.vue")
     }
   }
 }
