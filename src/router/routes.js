@@ -5,7 +5,9 @@ const routes = [
     component: () => import('layouts/MyLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Home.vue')},
+
       {path: '/login', component: () => import('pages/Login.vue')},
+
       
     ]
   },
@@ -23,8 +25,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/resourceLay.vue'),
     children: [
-      
-      
+
       
     ]
   }
