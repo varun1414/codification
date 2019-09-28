@@ -1,32 +1,51 @@
  <template>
 <div>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div style="position:relative">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
    <link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
    <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940s" width="1500" height="656">
+   
    <div style="position:fixed;height:60px;width:100%;top:0px;left:0;background-color: black; z-index:1">
-     <h4 style="display: inline-block; margin-top:15px; margin-left:550px; color:white;font-family: 'Clicker Script'; font-size=30px">Codification</h4>
-  </div>
-   <div class="q-pa-md row items-start q-gutter-md">
-     <q-card
-      class="my-card text-white"
-      style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
-    >
-      <q-card-section>
-        <div class="text-h6"> STEP UP YOUR CODING GAME</div>
-         </q-card-section> 
-         <q-card-section>
-     The new way to improve your programming skills while having fun and getting noticed
+     <h4 style="display: inline-block; margin-top:15px; margin-left:550px; color:white;font-family: 'Clicker Script'; font-size=30px; padding:0 0 0 40px">Codification</h4>
+  </div>     
+   
+
+
+
+<div class="q-pa-md row items-start q-gutter-md" style="text-align:center">
+
+    <q-card class="my-card" style="position:absolute; display:block; margin:auto;top:200px; left:200px;">
+      <q-card-section style="padding:0 2px 0 2px;font-weight:bold;font-size:18px;">
+       <p style="padding:0 0 0 0">
+       <p style="font-size:20px; color:blue;">Importance of Problem Solving.</p>
+       Without Problem Solving, coding will just be typing commands in a given language.<br>
+       Without it, a coder will be no more than a mere typist, writing commands to the computer.
+   </p>
       </q-card-section>
     </q-card>
-     </div>
-    
-     
-   
-<div class="fixed-center" style=" display:block; margin:auto; padding:500px 0 0 0;" >
-   <q-btn label="Get Started"  color="amber" @click="login()"/>
-    </div>
- </div>
 
+    <q-card class="my-card" style="position:absolute; display:block; margin:auto;top:200px; left:700px;">
+     <q-card-section style="padding:0 3px 0 3px;font-weight:bold;font-size:18px">
+       <p style="padding:0 0 0 0">
+       <p style="font-size:20px; color:blue;">Don't be Syntax Dependant.</p>
+       Syntax is merely the grammar of any language that you use.
+       True grammar is important. But knowing just the grammar isn't useful.<br>
+       What we communicate using the grammar is what counts!!
+   </p>
+      </q-card-section>
+    </q-card>
+
+
+	<div class="fixed-bottom" style=" position:absolute; display:block; margin:auto;bottom:100px;" >
+   <q-btn elavated rounded label="Get Started" size="20px" color="primary" @click="login()"/>
+    </div>
+
+
+</div>
+
+</div>
+
+ </div>
    </template>
 
 
@@ -47,14 +66,21 @@
      }
    }
    </script>
-   <style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 250px
+   <style>
+	.my-card{
+		font-family: 'Mansalva', cursive;
+
+	background-color: white;
+	opacity:0.7;
+		height: 250px;
+	  width: 100%;
+	  max-width: 250px;
+	}
 </style>
+
      <style>
      
-     body{
+     .body{
        overflow: hidden;
 
      }

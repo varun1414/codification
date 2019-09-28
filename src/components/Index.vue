@@ -13,19 +13,21 @@
       
     </q-carousel>
    </div>
+
    
    
    
    <div class="row">
       <div class="col">
         <div style="width:70%; margin:auto; padding:50px 0 0 0;" >
+
  <q-card
       class="my-card text-white"
       style="height:100px; background: radial-gradient(circle, #35a2ff 0%, #014a88 100%);"
 
     >
       <q-card-section>
-        <div class="text-h6">WELCOME BACK <br>{{this.name}}</div>
+        <div class="text-h6">WELCOME BACK, <br>{{this.name}}</div>
       
       </q-card-section>
 
@@ -34,10 +36,12 @@
       </q-card-section> -->
     </q-card>
     </div>
+
       </div>
 
       <div class="col">
         <div class="cent" >
+
     <div class="col-8">
      <q-circular-progress
       show-value
