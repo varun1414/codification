@@ -8,12 +8,28 @@
       navigation
       infinite
     >
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" style="height:350px"/>
+      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" style="height:250px"/>
       <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
       <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
       <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
     </q-carousel>
    </div>
+   <div style="width:20%;height:10%;padding:0 0 0 40px;" >
+ <q-card
+      class="my-card text-white"
+      style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
+
+    >
+      <q-card-section>
+        <div class="text-h6">WELCOME BACK <br>{{this.name}}</div>
+      
+      </q-card-section>
+
+      <!-- <q-card-section>
+        Hello {{ lorem }}
+      </q-card-section> -->
+    </q-card>
+    </div>
    <div class="cent" >
     <div class="col-8">
      <q-circular-progress
@@ -144,20 +160,28 @@
 
 <script>
 export default {
+  props:['uid'],
   name: 'PageIndex',
   data(){
     return{
       slide:1,
-      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      value:20,
-      rank:7,
-      gold:2,
-      platinum:7,
-
+      
+      value:0,
+      rank:0,
+      gold:0,
+      platinum:0,
+      name:'',
+      temp:{},
       counter: 22
 
 
     }
+  },
+    mounted(){
+  this.name=this.$store.getters.getUser[1].UserName;
+    },
+  methods:{
+  
   }
 }
 </script>

@@ -18,6 +18,7 @@
       </div>
 </div>
       </q-header>
+      <div class="fixed-left">
        <q-drawer
         v-model="drawer"
         show-if-above
@@ -79,6 +80,7 @@
           </div>
         </q-img>
       </q-drawer>
+      </div>
       <q-page-container>
       <router-view />
     </q-page-container>
