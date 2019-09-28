@@ -48,18 +48,17 @@ module.exports = function (ctx) {
         'QCarouselSlide',
         'QCard',
         'QCardSection',
-        'QCardActions',
+       'QCardActions',
 
         'QCircularProgress',
         'QBtn',
         'QParallax',
 
         'QCircularProgress',
-        'QBtn',
-        'QTable',
-      'QTh',
-      'QTr',
-      'QTd'
+        'QTree',
+
+        'QCircularProgress',
+        'QBtn'
 
       ],
       directives: [],

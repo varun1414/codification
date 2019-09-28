@@ -18,6 +18,7 @@ export default function (/* { ssrContext } */) {
         userArray:[
           {
             UserName:"vedita",
+            id:0,
             pword:'vedita123',
             points:123,
             gold:150,
@@ -25,14 +26,16 @@ export default function (/* { ssrContext } */) {
           },
     
           {
-            UserName:"bhushan",
-           pword:'bhushan123',
+            UserName:"jon",
+            id:1,
+           pword:'123',
            points:133,
             gold:250,
             platinum:5
           },
           {
             UserName:"purva",
+           id:2,
             pword:'purva123',
             points:153,
             gold:350,
