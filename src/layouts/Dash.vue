@@ -25,9 +25,15 @@
        </div>
        </div>
       <q-tabs align="left">
+<<<<<<< HEAD
         <q-route-tab to="index:uid" label="My Progress" />
         <q-route-tab to="/page2" label="Leaderboard"  />
         <q-route-tab to="/resources" label="My Courses" @click="route3"/>
+=======
+        <q-route-tab to="resources" label="My Progress" />
+        <q-route-tab to="/leaderboard" label="Leaderboard" @click="route2" />
+        <q-route-tab to="/page3" label="About" @click="route3"/>
+>>>>>>> aa61e69b4bf78954c721a573fd71a43413ce15dd
       </q-tabs>
       
 
