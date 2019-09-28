@@ -6,7 +6,7 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Home.vue')},
       {path: '/login', component: () => import('pages/Login.vue')},
-      { path: '/leaderboard', component: () => import('components/leaderboard.vue')},
+      
     ]
   },
   {
@@ -14,6 +14,8 @@ const routes = [
    component: () => import('layouts/Dash.vue'),
    children: [
      {  path: '/index:uid',name:'dash',props:true ,component: () => import('components/index.vue')},
+     { path: '/leaderboard', component: () => import('components/leaderboard.vue')},
+     { path: '/resources', component: () => import('components/resources.vue')}
        /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
    ]
  },
@@ -21,7 +23,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/resourceLay.vue'),
     children: [
-      { path: '/resources', component: () => import('components/resources.vue')}
+      
       
       
     ]
