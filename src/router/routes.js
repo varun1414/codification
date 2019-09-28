@@ -1,13 +1,6 @@
 
 const routes = [
-    {
-     path: '/index', 
-    component: () => import('layouts/Dash.vue'),
-    children: [
-      {  path: '\index:user_obj',name:'dash',props:true ,component: () => import('pages/index.vue')},
-        /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
-    ]
-  },
+   
    
    
   {
@@ -19,6 +12,14 @@ const routes = [
  
     ]
   },
+  {
+    path: '/', 
+   component: () => import('layouts/Dash.vue'),
+   children: [
+     {  path: '/index:uid',name:'dash',props:true ,component: () => import('components/index.vue')},
+       /* {path: '/login', component: () => import('pages/Login.vue')}*/ 
+   ]
+ },
   {
     path: '/',
     component: () => import('layouts/resourceLay.vue'),

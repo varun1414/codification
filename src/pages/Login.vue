@@ -64,18 +64,19 @@ export default {
         {
             if(this.$store.getters.getUser[i].UserName==this.name)
              {
-              this.storeData[0]=this.$store.getters.getUser[i].UserName 
+              this.storeData[0]=this.$store.getters.getUser[i].UserName
               this.storeData[1]=this.$store.getters.getUser[i].pword
+              this.storeData[2]=this.$store.getters.getUser[i].id
               }
         } 
           
      if(this.storeData[0]==this.name && this.storeData[1]==this.pword )
       {
-          this.$router.push('/index')
+          this.$router.push({name:'dash', params:{uid:this.storeData[2]}})
       }
          else
              {
-                this.$router.push('/*')
+                this.$router.push('-1')
             }
      }
    }
