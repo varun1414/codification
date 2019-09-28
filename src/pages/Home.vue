@@ -28,7 +28,7 @@
      <q-card-section style="padding:0 3px 0 3px;font-weight:bold;font-size:18px">
        <p style="padding:0 0 0 0">
        <p style="font-size:20px; color:blue;">Don't be Syntax Dependant.</p>
-       Syntax is merely the grammar of any language that you use.<br>
+       Syntax is merely the grammar of any language that you use.
        True grammar is important. But knowing just the grammar isn't useful.<br>
        What we communicate using the grammar is what counts!!
    </p>

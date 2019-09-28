@@ -1,13 +1,13 @@
 <template>
 <div>
-    <div style="width:20%;height:10%;padding:30px 0 0 40px;top:10%;" >
+    <div style="width:30%;height:10%;padding:30px 0 0 40px;top:10%;" >
  <q-card
       class="my-card text-white"
       style="background: radial-gradient(circle, #35a2ff 0%, #014a88 100%)"
 
     >
       <q-card-section>
-        <div class="text-h6">WELCOME BACK <br>Varun</div>
+        <div class="text-h6">WELCOME BACK, <br>Razvan</div>
         
       </q-card-section>
 
@@ -52,18 +52,27 @@ Let’s understand these two types with the help of examples.
 
 Decision making condition statement
 Conditions like ‘if’, “if-else”, “if-else-if”, “nested if”, ternary conditions etc fall under this category.</p>
-        <q-card dark bordered class="bg-grey-9 my-card">
+        <q-card dark bordered class="bg-grey-9 my-card" style="height:185px">
       <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
+        <div class="text-h6">Are You Worthy?!</div>
+        <div class="text-subtitle2">Everyone who has tried till now has failed. The one who weilds the hammer beholds the power of THOR.<br> Do You Think You Are Worthy?</div>
       </q-card-section>
 
       <q-separator dark inset />
 
-      <q-card-section>
-        {{ lorem }}
+      <q-card-section style=" padding:7px 0 0 10px;">
+       <div class="row">
+      <div class="col">
+       <q-btn color="accent" @click="challenge1()" label="Take Challenge" />
+      </div>
+      <div class="col">
+        <p style="font-size:15px; text-align:right; padding:3px 10px 0 0;">Reward:10 <q-icon name="img:statics/gold.png " size="30px"/></p>
+      </div>
+    </div>
+        
       </q-card-section>
     </q-card>
+
           </q-tab-panel>
 
           <q-tab-panel name="LOOPS">
@@ -72,13 +81,37 @@ Conditions like ‘if’, “if-else”, “if-else-if”, “nested if”, tern
 
 C programming has three types of loops:
 <br>
-1.for loop
+1.For loop
 <br>
-2.while loop
+2.While loop
 <br>
-3.do...while loop
+3.Do...While loop
 <br>
 We will learn about for loop in this tutorial. In the next tutorial, we will learn about while and do...while loop.</p>
+
+
+<q-card dark bordered class="bg-grey-9 my-card" style="height:160px">
+      <q-card-section>
+        <div class="text-h6">Coders Assemble!!</div>
+        <div class="text-subtitle2">Every time we need to upgrade our count to meet the level of the threat!!<br>Can the best minds in the world beat the threat staying well within their limit?! </div>
+      </q-card-section>
+
+      <q-separator dark inset />
+
+      <q-card-section style=" padding:7px 0 0 10px;">
+       <div class="row">
+      <div class="col">
+       <q-btn color="accent" @click="challenge2()"label="Take Challenge" />
+      </div>
+      <div class="col">
+        <p style="font-size:15px; text-align:right; padding:3px 10px 0 0;">Reward:25 <q-icon name="img:statics/gold.png " size="30px"/></p>
+      </div>
+    </div>
+        
+      </q-card-section>
+    </q-card>
+
+
           </q-tab-panel>
 
           <q-tab-panel name="FUNCTIONS">
@@ -92,6 +125,28 @@ A function declaration tells the compiler about a function's name, return type, 
 The C standard library provides numerous built-in functions that your program can call. <br>For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.
 
 A function can also be referred as a method or a sub-routine or a procedure, etc.</p>
+
+<q-card dark bordered class="bg-grey-9 my-card" style="height:165px">
+      <q-card-section>
+        <div class="text-h6">I am Inevitable!!</div>
+        <div class="text-subtitle2">Why do a thing 14 billion times, when you can make it right in a go?!<br>
+        Use the ONE way to solve all similar Earth Crises!!</div>
+      </q-card-section>
+
+      <q-separator dark inset />
+
+      <q-card-section style=" padding:7px 0 0 10px;">
+       <div class="row">
+      <div class="col">
+       <q-btn color="accent" @click="challenge3()" label="Take Challenge" />
+      </div>
+      <div class="col">
+        <p style="font-size:15px; text-align:right; padding:3px 10px 0 0;">Reward:50 <q-icon name="img:statics/gold.png " size="30px"/></p>
+      </div>
+    </div>
+        
+      </q-card-section>
+    </q-card>
           </q-tab-panel>
         </q-tab-panels>
       </template>
@@ -127,6 +182,17 @@ export default {
         }
       ]
     }
+  },
+  methods:{
+  challenge1() {
+    this.$router.push('/challenge1')
+  },
+  challenge2() {
+    this.$router.push('/challenge2')
+  },
+challenge3() {
+    this.$router.push('/challenge3')
+  }
   }
 }
 </script>
