@@ -1,4 +1,4 @@
-Codification is an app developed to attempt to incorparate a gamification model in the learning process. 
+Codification is an app developed in attempt to incorparate a gamification model in the learning process. 
 
 # Quasar App (codification)
 
